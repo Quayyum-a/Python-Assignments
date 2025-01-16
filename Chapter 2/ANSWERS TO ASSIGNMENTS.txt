@@ -1,0 +1,12 @@
+	ANSWERS TO ASSIGNMENTS
+
+2.1 a)('x =', 2)
+    b) Value of 2 + 2 is 4
+    c) x =
+    d) 5 = 5
+2.2 rating = int(input('Enter an integer rating between 1 and 10')
+
+2.3 print('Congratulations! Your grade of 91 earns you A in this course')
+
+
+                                                                                                                                               2.13 There is no number python does not collect
