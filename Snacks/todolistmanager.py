@@ -40,10 +40,10 @@ def mark_complete():
     if not tasks:
         print("No tasks to mark as complete.")
         return
-        task_number = int(input("Enter the task number to mark as complete: ")) - 1
-        if 0 <= task_number < len(tasks):
-            tasks[task_number]["completed"] = True  
-            print(f"Task '{tasks[task_number]['task']}' completed.")
-        else:
-            print("Invalid task number. Please enter a valid number.")
+    task_number = int(input("Enter the task number to mark as complete: ")) - 1
+    if 0 <= task_number < len(tasks):
+        tasks[task_number]["completed"] = True  
+        print(f"Task '{tasks[task_number]['task']}' completed.")
+    else:
+        print("Invalid task number. Please enter a valid number.")
     
