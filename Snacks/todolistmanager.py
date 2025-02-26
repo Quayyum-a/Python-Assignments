@@ -46,4 +46,40 @@ def mark_complete():
         print(f"Task '{tasks[task_number]['task']}' completed.")
     else:
         print("Invalid task number. Please enter a valid number.")
+        
+        
+def delete_task():
+    if not tasks:
+        print("No tasks to delete.")
+        return
     
+    try:
+        task_number = int(input("Enter the task number to delete: ")) - 1
+        if 0 <= task_number < len(tasks):
+            deleted_task = tasks.pop(task_number)
+            print(f"Task '{deleted_task['task']}' deleted successfully.")
+        else:
+            print("Invalid task number. Please enter a valid number.")
+    except ValueError:
+        print("Invalid input! Please enter a number.")
+
+
+def exit_app():
+    return "\nExiting the app. Goodbye!"
+    
+    
+def get_main():
+    tasks = []
+    
+    print(get_heading())
+    
+    while True:
+        print("\n1. Add a task")
+        print("2. View all expenses")
+        print("3. Calculate total expenses")
+        print("4. Exit")
+
+        choice = input("Enter your choice: ")
+        
+if__name__=="__main__":
+        get_menu                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       

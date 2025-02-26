@@ -39,6 +39,19 @@ class TestToDoListManager(unittest.TestCase):
         actual = tasks[task_number]["completed"]
         
         self.assertTrue(actual, expected)
+        
+    def test_that_to_do_list_delete_task(self):
+        todolistmanager.tasks = [{"task": "Buy groceries"}, {"task": "Make Money"}]
+        actual = todolistmanager.tasks.pop(0)  
+        result = {"task": "Buy groceries"}  
+        self.assertEqual(actual, result)
+
+    def test_that_to_do_list_exits_(self):
+        actual = todolistmanager.exit_app()
+        self.assertEqual(actual, "\nExiting the app. Goodbye!")
+
+
+
     
 if __name__ == "__main__":
     unittest.main()
